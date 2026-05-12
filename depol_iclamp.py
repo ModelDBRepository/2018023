@@ -1,0 +1,20 @@
+"""depol_iclamp.py will create and set a depolarizing iclamp that is
+used to set the soma to various target voltages.
+"""
+
+from neuron import h
+import pickle
+
+depol_iclamp = h.IClamp(h.soma(0.5))
+
+h("objref depol_iclamp")
+h.depol_iclamp = depol_iclamp
+depol_iclamp.dur=1e6 # always left on
+
+with open('archive/depol_iv_pairs_dict.pkl', 'rb') as f:
+    depol_iv_pairs_dict=pickle.load(f) # make this dict available for use with
+# the current clamp amplitude index, rewritten below from sensitivity_depol..
+
+amp_index=3
+
+
