@@ -81,7 +81,7 @@ The output of the above shell script is plotted with the below python script:
 
 which recreates a similar plot to Figure 2B:
 
-![Figure_2B](./images/Figure_2B.png)
+![Figure_2B](images/Figure_2B.png)
 
 To plot a comparison of delta Ca suppression between these
 simulations (by retrieving data from the base_dir_name folders) at
@@ -106,7 +106,7 @@ represent depolarizing shifts):
 
     python3 -i explore_ca_data_vshift.py
 
-![Figure_2C](./images/Figure_2C.png)
+![Figure_2C](images/Figure_2C.png)
 
 ## Supplemental figures
 
@@ -117,18 +117,18 @@ Figure 2A) you can run
 
     python3 -i compare_hva_lva.py
 
-![LVA_HVA_states](./images/LVA_HVA_states.png)
+![LVA_HVA_states](images/LVA_HVA_states.png)
 
-![LVA_taus](./images/LVA_taus.png)
+![LVA_taus](images/LVA_taus.png)
 
-![HVA_taus](./images/HVA_taus.png)
+![HVA_taus](images/HVA_taus.png)
 
 For a figure similar to suppl fig 2B run (requires
 `sensitivity_depol_iclamp.sh` to be run first (see above)):
 
     python3 -i tGAR_block_deltaV.py
 
-![supplFig2B](./images/supplFig2B.png)
+![supplFig2B](images/supplFig2B.png)
 
 For sensitivity studies of Ca2+ suppression comparing blocked tonic
 GABAAR and control cases as a function of Ca2+ channel kinetics
@@ -152,7 +152,7 @@ Note: as in figure 2C, the paper vshift was different than the
 model parameter vshift which has negative values representing
 depolarizing (shifts to the right) of the infinity curve:
 
-![suppl_Figure_2C](./images/suppl_Figure_2C.png)
+![suppl_Figure_2C](images/suppl_Figure_2C.png)
 
 To recreate suppl figure 2D (takes 10 minutes on 2019 MacBook):
 
@@ -165,7 +165,7 @@ and then
 Orange is HVA, purple is LVA, and black is average delta Ca2+
 suppression (defined above):
 
-![suppl_Figure_2D](./images/suppl_Figure_2D.png)
+![suppl_Figure_2D](images/suppl_Figure_2D.png)
 
 ## general notes about output folders
 
